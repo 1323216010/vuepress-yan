@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://threejs.org/examples/misc_controls_pointerlock.html
+heroImage: https://7072-prod-4gxasl3i1c9bec5c-1316782094.tcb.qcloud.la/v2-6d7ad2190bb94b757f7edd6200a191dc_b.jpg?sign=0b923a6a575e8acb0666bc97c6455578&t=1677483810
 heroText: Yan
 tagline: 项目合订本
 actionText: 快速开始 →
