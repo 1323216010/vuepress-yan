@@ -1,25 +1,27 @@
+const { text } = require("express");
+
 module.exports = {
   title: '我的幻想乡',
   description: 'Just playing around',
   themeConfig: {
-/*     sidebar: {
-      '/document/Java/': [
-        '', 
-        'js', 
-      ],
-    }, */
+    /*     sidebar: {
+          '/document/Java/': [
+            '', 
+            'js', 
+          ],
+        }, */
     sidebar: [
       {
-        title: '回到首页',   // 必要的
-        path: '/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        title: '回到首页',
+        path: '/',
       },
       {
-        title: 'Java',   // 必要的
-        path: '/document/Java/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        title: 'JavaScript',
+        path: '/document/JavaScript/',
         children: [
           {
-            title: '子页',   // 必要的
-            path: '/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+            title: '子页',
+            path: '/document/JavaScript/js',
           },
         ]
       }
@@ -35,7 +37,13 @@ module.exports = {
           { text: 'Vue', link: './document/Vue/index.md' }
         ]
       },
-      { text: '代码生成器', link: 'https://vue3-frame.vercel.app/tool/gen' },
+      {
+        text: '代码生成器',
+        items: [
+          { text: 'R风格', link: 'https://vue3-frame.vercel.app/tool/gen' },
+          { text: 'G风格', link: 'https://vue3-frame.vercel.app/autoCode' },
+        ]
+      },
       { text: 'External', link: 'https://google.com' },
     ]
   }
